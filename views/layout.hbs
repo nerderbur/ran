@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    {{#each pageStyles}}
+    <link rel='stylesheet' href='{{this}}' />
+    {{/each}}
+    {{#each beforePageJS}}
+    <script src="{{this}}"></script>
+    {{/each}}
+  </head>
+  <body>
+      <div class="preloader"></div>
+
+
+      <!-- Header navbar start -->
+      <div class="main-navbar no-bg position-fixed header-color">
+          <div class="container-fluid padding-none padding-rl-50">
+              <div class="row">
+                  <div class="col-md-12">
+                      <nav class="navbar navbar-default style-1">
+                          <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                  <span class="sr-only">Toggle navigation</span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand dis-none" href="index-one.html"><img src="img/logo.png" alt="">
+                              </a>
+                              <a class="navbar-brand dis-block" href="index-one.html"><img src="img/logo-2.png" alt="">
+                              </a>
+                          </div>
+                          <div class="navbar-collapse" id="bs-example-navbar-collapse-1" data-animations="fadeInUp">
+                              <ul class="nav navbar-nav navbar-right">
+                                  <li class="dropdown active">
+                                      <a href="/" class="dropdown-toggle flip-animate" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Home">Home </span> </a>
+                                  </li>
+                                  <li class="">
+                                      <a href="/gallery" class="dropdown-toggle flip-animate" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Gallery">Gallery </span> </a>
+                                  </li>
+                                  <li class="">
+                                      <a href="#" class="dropdown-toggle flip-animate" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Learn More!">About Us </span> </a>
+                                  </li>
+                                  <li class="">
+                                      <a href="#" class="dropdown-toggle flip-animate" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span data-hover="Help Out!">Contact Us </span> </a>
+                                  </li>
+                                  <li>
+                                      <div class="shop-icon">
+                                          <a href="#"><span class="icon icon-Search"></span></a>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </div>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Header navbar end -->
+    {{{body}}}
+    {{#each afterPageJS}}
+        <script type="text/javascript" src="{{this}}"></script>
+    {{/each}}
+  </body>
+</html>
